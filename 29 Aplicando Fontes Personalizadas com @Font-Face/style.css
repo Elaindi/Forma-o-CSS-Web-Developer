@@ -1,0 +1,9 @@
+@font-face {
+    font-family: lobster ;
+    src: url(Lobster-Regular.ttf);
+    font-weight: normal;
+}
+
+*{
+    font-family: lobster;
+}
