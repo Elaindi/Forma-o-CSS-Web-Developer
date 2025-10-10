@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade Overflow</title>
+    <style>
+        .exemplo {
+            background-color: rgb(43, 153, 226);
+            border: 3px solid orange;
+            padding: 10px;
+            width: 200px;
+            height: 200px;
+            /* Aqui você pode testar diferentes valores de overflow */
+            overflow: visible; /* visible | hidden | scroll | auto */
+        }
+
+        #hidden{
+            overflow: hidden;
+        }
+
+        #scroll{
+            overflow: scroll;
+        }
+
+        #auto{
+            overflow: auto;
+        }
+
+        #exemplo1{
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <h2>Propriedade <code>overflow</code></h2>
+    <p>Controla como o conteúdo deve ser exibido caso ultrapasse os limites do container.</p>
+    <i>Exemplo:</i><br><br>
+
+    <code>overflow: visible;</code>
+    <div class="exemplo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quidem hic natus reiciendis, sapiente cumque praesentium ullam obcaecati temporibus impedit qui neque deleniti ratione non earum, perferendis eligendi dolore quas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quidem hic natus reiciendis, sapiente cumque praesentium ullam obcaecati temporibus impedit qui neque deleniti ratione non earum, perferendis eligendi dolore quas.</p>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+    <code>overflow: hidden;</code>
+    <div id="hidden" class="exemplo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quidem hic natus reiciendis, sapiente cumque praesentium ullam obcaecati temporibus impedit qui neque deleniti ratione non earum, perferendis eligendi dolore quas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quidem hic natus reiciendis, sapiente cumque praesentium ullam obcaecati temporibus impedit qui neque deleniti ratione non earum, perferendis eligendi dolore quas.</p>
+    </div>
+
+    
+<br><br>
+    <code>overflow: scroll;</code>
+    <div id="scroll" class="exemplo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quidem hic natus reiciendis, sapiente cumque praesentium ullam obcaecati temporibus impedit qui neque deleniti ratione non earum, perferendis eligendi dolore quas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quidem hic natus reiciendis, sapiente cumque praesentium ullam obcaecati temporibus impedit qui neque deleniti ratione non earum, perferendis eligendi dolore quas.</p>
+    </div>
+    <br><br>
+        <code>overflow: auto;</code>
+        <div id="auto" class="exemplo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quidem hic natus reiciendis, sapiente cumque praesentium ullam obcaecati temporibus impedit qui neque deleniti ratione non earum, perferendis eligendi dolore quas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quidem hic natus reiciendis, sapiente cumque praesentium ullam obcaecati temporibus impedit qui neque deleniti ratione non earum, perferendis eligendi dolore quas.</p>
+    </div>
+
+    <br><br>
+        <code>overflow: x;</code>
+        <div id="exemplo1" class="exemplo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quidem hic natus reiciendis, sapiente cumque praesentium ullam obcaecati temporibus impedit qui neque deleniti ratione non earum, perferendis eligendi dolore quas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quidem hic natus reiciendis, sapiente cumque praesentium ullam obcaecati temporibus impedit qui neque deleniti ratione non earum, perferendis eligendi dolore quas.</p>
+    </div>
+
+    
+</body>
+</html>
