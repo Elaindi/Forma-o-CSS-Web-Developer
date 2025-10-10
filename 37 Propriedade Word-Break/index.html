@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .exemplo1, .exemplo2, .exemplo3{
+            width: 120px; 
+            background-color: rgb(31, 202, 214);
+
+        }
+
+        #break-word{
+            word-wrap:break-word ;
+        }
+
+        #breal-all{
+            word-break: break-all;
+        }
+
+        #keep-all{
+            word-break: keep-all;
+        }
+    </style>
+
+</head>
+<body>
+    Propriedades <code>word-break</code>
+    <p>Definequando nosso texto deve ter uma querba de linha</p>
+    
+    <p>word-break: normal</p>
+    <p id="break-word" class="exemplo1">trilha de css trilhadecsstudojunto</p>
+
+    <p>word-break: break-all</p>
+    <p id="break-all" class="exemplo2">trilha de css trilhadecsstudojunto</p>
+    
+    <p>word-break: keep-all</p>
+    <p id="keep-all" class="exemplo3">trilha de css trilhadecsstudojunto</p>
+</body>
+</html>
