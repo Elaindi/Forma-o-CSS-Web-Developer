@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trilha css</title>
+    <style>
+       /*
+       combinadores: definem a relação entre 2 seletores.
+       1. descendente (espaço)
+       2. filho (>)
+       3. adjacente (+)
+       4. geral (~)
+       sintaxe: [seletor] [combinador] [seletor]
+       */
+       
+       .fundo-verde li {
+            background: lightgreen;
+       }
+
+       .fundo-azul li {
+            background: rgb(196, 144, 238);
+       }
+
+       li {
+            color: rgb(223, 41, 9);
+       }
+
+       /* Sublista específica dentro da lista verde */
+       .fundo-verde #sublista-01 li {
+            color: black;
+       }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="fundo-verde" id="lista-01">
+            <div>Item 1</div>
+            <ul id="sublista-01">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+
+        <li class="fundo-verde" id="lista-02">
+            <div>Item 2</div>
+            <ul id="sublista-02">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+        
+        <li class="fundo-azul" id="lista-03">
+            <div>Item 3</div>
+            <ul id="sublista-03">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

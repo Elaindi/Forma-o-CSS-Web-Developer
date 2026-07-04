@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Valores possíveis:
+
+none → sem decoração
+
+underline → sublinhado
+
+overline → linha acima do texto
+
+line-through → linha no meio do texto
+
+blink → piscar (não é mais suportado na maioria dos navegadores)
+⚙️ Propriedades individuais (versões modernas do CSS)
+text-decoration-line
+
+Define o tipo de linha decorativa.
+Valores:
+
+none
+
+underline
+
+overline
+
+line-through
+
+(Pode combinar: underline overline)
+
+text-decoration-style
+
+Define o estilo da linha de decoração.
+Valores:
+
+solid → linha contínua
+
+double → linha dupla
+
+dotted → pontilhada
+
+dashed → tracejada
+
+wavy → ondulada
+:-->
+    <style>
+        h1 + p{
+            color: red;
+        text-decoration-line: overline;
+        text-decoration-style: double;
+        text-decoration-color: blue;
+        text-decoration-thickness: 3px;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedades <code>text-decoration</code></h1>
+    <p>Adiciona ou remove linhas no nosso texto: sejam linhas acima, no meio, ou abaixo</p>
+    <p>É uma propriedade abreviada de :</p>
+    <ul>
+        <li><code>text-decoration-line</code></li>
+        <li><code>text-decoration-style</code></li>
+        <li><code>text-decoration-color</code></li>
+        <li><code>text-decoration-thinckness</code></li>
+    </ul>
+    <a href="#">link de exemplo</a>
+</body>
+</html>

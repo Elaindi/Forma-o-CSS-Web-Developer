@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trilha Css</title>
+    <style>
+
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .exemplo {
+            background-color: lightpink;
+        }
+
+        #item-01 {
+            vertical-align: middle;
+
+        }
+
+        #item-02{
+           
+           /* display: none;*/
+           visibility: hidden;
+           text-align: center;
+        }
+
+
+        .inline {
+            color: blue;
+            width: 300px;
+        }
+        b {
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .inline-block {
+            display: inline-block;
+            box-sizing: border-box;
+            width: 200px;
+           
+            margin: 8px;
+            vertical-align: top;
+            padding: 30px;
+        }
+
+        .menu{
+            background-color: rgb(13, 228, 210);
+        }
+
+        .menu ul li {
+            display: inline-block;
+            padding: 20px 40px;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .esconder-elemento {
+            display: none;
+        }
+
+        .container {
+            border:1px solid red;
+            text-align: center;
+        
+        }
+
+    </style>
+    
+</head>
+<body>
+    <h1>Propriedade display</h1>
+    <p>A propriedade display vai determinar como essas caixinhas retangulares irão se comportar na hora sw serem exibidas na tela.</p>
+    <ul>
+        <li>border-width</li>
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+    <h2>Exemplos:</h2>
+    <code>Display: block;</code>
+    <br><br>
+    
+    <div class="exemplo">Exemplo 01</div>
+    <p class="exemplo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate ratione sapiente neque quaerat, quia modi itaque. Unde et rerum quae, cum saepe nemo incidunt laboriosam est quis tempora repudiandae ullam.</p>
+    <span class="exemplo" style="display: block;">exemplo 03</span>
+    <br>
+    <em class="exemplo inline">exemplo 04</em>
+    <p>Lorem <b class="exemplo">ipsum dolor sit amet consectetur</b> adipisicing elit. Non, dignissimos ullam harum praesentium fuga in similique modi. Nemo saepe inventore, quas aliquam incidunt veritatis, iure officia debitis ullam quidem corporis.</p>
+
+    <span class="exemplo inline">Exemplo inline 01</span>
+    <em class="exemplo inline">Exemplo inline 02</em>
+    <b class="exemplo inline">Exemplo inline 03</b>
+
+    <br><br>
+    <code>Display: inline-block; </code>
+    <br><br>
+
+    <span class="exemplo inline-block">Exemplo inline-block 04</span>
+    <em class="exemplo inline-block">Exemplo inline-block 05</em>
+    <b class="exemplo inline-block">Exemplo inline-block 06</b>
+
+    <span class="exemplo inline-block">Exemplo inline-block 07</span>
+    <em class="exemplo inline-block">Exemplo inline-block 08</em>
+    <b class="exemplo inline-block">Exemplo inline-block 09</b>
+
+    <p>Lorem ipsum, <b class="inline-block exemplo">dolor sit amet consectetur</b> adipisicing elit. Adipisci, maiores doloremque. Explicabo, ipsum. Modi itaque dignissimos, soluta incidunt amet minima nisi nesciunt. Distinctio consequatur enim repellat aut fugit eum est!</p>
+    <br><br><br>
+
+    <code>display: none;</code>
+    <br><br>
+    <div class="exemplo esconder-elemento">Exemplo 01</div>
+
+
+    <h3>Menu de navegação</h3>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Meu link 01</a></li>
+            <li><a href="#">Meu link 02</a></li>
+            <li><a href="#">Meu link 03</a></li>
+        </ul>
+
+    
+        <h1>Alinhamento de elementos inline</h1>
+
+        <div class="container">
+       <img id="item-01"  src="/instagram.png" width="30px" alt="">
+        <span id="item-02" class="exemplo">Item 02</span>
+        <span id="item-03" class="exemplo">Item 03</span>
+        </div>
+    </nav>
+</body>
+</html>
