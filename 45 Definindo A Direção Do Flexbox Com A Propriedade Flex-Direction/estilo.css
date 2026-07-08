@@ -1,0 +1,19 @@
+.container {
+    background: rgb(105, 221, 105);
+    padding: 20px;
+    display: flex;
+}
+
+.item {
+    background: rgb(117, 160, 201);
+    margin: 10px;
+}
+
+#container-01 {
+    flex-direction: row-reverse;
+}
+
+#container-02 {
+    flex-direction: column-reverse;
+    height: 400px;
+}   

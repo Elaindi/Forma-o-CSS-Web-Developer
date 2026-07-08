@@ -1,0 +1,31 @@
+.container {
+    background: rgb(105, 221, 105);
+    /*padding: 20px;*/
+    margin: 20px;
+    display: flex;
+    box-sizing: border-box;
+    /*justify-content: flex-start;*/
+    /*justify-content: flex-end;*/
+    /*justify-content: center;*/
+    /*justify-content: space-between;*/
+    /*justify-content: space-around;*/
+    justify-content: space-evenly;  
+
+}
+
+.item {
+    background: rgb(117, 160, 201);
+    /*margin: 10px;*/
+    padding: 15px;
+}
+
+#container-01 {
+    flex-flow: row wrap;
+}
+
+#container-02 {
+    flex-direction: column-reverse;
+    height: 400px;
+    flex-flow: column wrap-reverse;
+}
+

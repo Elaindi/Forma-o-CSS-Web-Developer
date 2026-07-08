@@ -1,0 +1,36 @@
+.container {
+    background: rgb(105, 221, 105);
+    margin: 20px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: flex-start;
+    border: 2px solid #333;
+    width: 400px;
+    padding: 10px;
+    align-content: space-around;
+}
+
+.item {
+    background: rgb(117, 160, 201);
+    padding: 15px;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+#container-01 {
+   #container-01 {
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    height: 400px;
+}
+}
+
+#container-01 {
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    height: 400px;
+}
