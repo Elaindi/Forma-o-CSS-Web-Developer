@@ -1,0 +1,27 @@
+.container {
+    background: rgb(105, 221, 105);
+    margin: 20px;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    box-sizing: border-box;
+    border: 2px solid #333;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 20px;
+}
+
+.item {
+    background: rgb(219, 243, 5);
+    
+}
+
+#container-01 {
+    flex-direction: row;
+}
+
+#container-02 {
+   flex-direction: column;
+}

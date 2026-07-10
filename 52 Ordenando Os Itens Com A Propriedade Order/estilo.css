@@ -1,0 +1,32 @@
+.container {
+    background: rgb(235, 34, 144);
+    margin-bottom: 20px;
+    padding: 10px;
+
+    /* O display:flex deve estar aqui */
+    display: flex;
+    gap: 10px;
+}
+
+#container-01 {
+    flex-flow: row wrap;
+}
+
+#container-02 {
+    flex-flow: column wrap;
+    height: 250px; /* Necessário para visualizar o wrap em coluna */
+}
+
+.item {
+    padding:8px;
+    background: yellow;
+    order: 09;
+}
+
+.item-04 {
+    order: 1;
+}
+
+.item-09 {
+    order:-2;
+}

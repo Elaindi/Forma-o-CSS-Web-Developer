@@ -1,0 +1,40 @@
+.container {
+    background: blueviolet;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+/* Primeiro container */
+.container-01 {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+    flex: 1;
+}
+
+/* Segundo container */
+.container-02 {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+    height: 150px;
+    flex: 1;
+}
+
+.item {
+    background: yellow;
+    padding: 10px;
+    border: 1px solid #000;
+    width: 50px;
+    height: 50px;
+    flex-shrink: 1;
+    min-width: 30px;
+
+   
+}
+
+.item-02 {
+    flex-grow: 3;
+}
