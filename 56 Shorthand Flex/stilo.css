@@ -1,0 +1,34 @@
+.container {
+    background:blueviolet;
+    padding:10px;
+    margin-bottom:20px;
+    width: 200px;
+    height: 200px;
+    /*flex container props*/
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+
+}
+
+.item {
+  
+    background: yellow;
+    text-align: center;
+    /*flex: initial;*/
+    /*flex: auto;*/
+    /*flex: none;*/
+    flex: 1;
+  
+  
+
+
+}
+
+.item-02 {
+    flex-basis: max-content;
+    flex: 0 50%
+    
+}
+
