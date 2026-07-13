@@ -1,0 +1,374 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f9f9f9;
+    color:#0f0f0f;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+    width:100%;
+    height:56px;
+    background:#fff;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 20px;
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    z-index:999;
+
+    border-bottom:1px solid #ddd;
+}
+
+.left{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.menu{
+    font-size:24px;
+    cursor:pointer;
+}
+
+.logo{
+    width:120px;
+}
+
+/* ==========================
+   PESQUISA
+========================== */
+
+.center{
+    display:flex;
+    align-items:center;
+    width:45%;
+}
+
+.center input{
+    width:100%;
+    height:40px;
+
+    border:1px solid #ccc;
+
+    padding:0 15px;
+
+    font-size:16px;
+
+    outline:none;
+}
+
+.center button{
+    width:64px;
+    height:40px;
+
+    border:1px solid #ccc;
+    background:#f8f8f8;
+
+    cursor:pointer;
+}
+
+.center button:hover{
+    background:#ececec;
+}
+
+/* ==========================
+   DIREITA
+========================== */
+
+.right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.right i{
+    font-size:22px;
+    cursor:pointer;
+}
+
+.right img{
+    width:36px;
+    height:36px;
+
+    border-radius:50%;
+}
+
+/* ==========================
+   MAIN
+========================== */
+
+main{
+
+    margin-top:80px;
+
+    padding:20px 30px;
+
+    display:grid;
+
+    grid-template-columns:2fr 380px;
+
+    gap:25px;
+
+}
+
+/* ==========================
+   VIDEO
+========================== */
+
+.video{
+
+    width:100%;
+
+    border-radius:12px;
+
+    display:block;
+
+}
+
+.video-area h2{
+
+    margin-top:18px;
+
+    font-size:22px;
+
+    line-height:1.5;
+
+}
+
+/* ==========================
+   AÇÕES
+========================== */
+
+.video-actions{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin:20px 0;
+
+}
+
+/* ==========================
+   CANAL
+========================== */
+
+.channel{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.channel img{
+
+    width:48px;
+    height:48px;
+
+    border-radius:50%;
+
+}
+
+.channel h3{
+
+    font-size:16px;
+
+}
+
+.channel p{
+
+    color:#606060;
+
+    font-size:14px;
+
+}
+
+/* ==========================
+   BOTÃO
+========================== */
+
+.subscribe{
+
+    background:#cc0000;
+
+    color:#fff;
+
+    border:none;
+
+    padding:12px 22px;
+
+    font-weight:bold;
+
+    border-radius:3px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.subscribe:hover{
+
+    background:#b00000;
+
+}
+
+/* ==========================
+   ICONES
+========================== */
+
+.actions{
+
+    display:flex;
+
+    gap:18px;
+
+}
+
+.actions span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.actions i{
+
+    font-size:18px;
+
+}
+
+/* ==========================
+   DESCRIÇÃO
+========================== */
+
+.description{
+
+    margin-top:20px;
+
+}
+
+.description p{
+
+    margin-bottom:12px;
+
+    line-height:1.6;
+
+}
+
+/* ==========================
+   SIDEBAR
+========================== */
+
+.sidebar{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.card{
+
+    display:flex;
+
+    gap:12px;
+
+    cursor:pointer;
+
+}
+
+.card:hover{
+
+    background:#f2f2f2;
+
+}
+
+.card img{
+
+    width:168px;
+
+    height:94px;
+
+    object-fit:cover;
+
+    border-radius:8px;
+
+}
+
+.card h4{
+
+    font-size:15px;
+
+    line-height:1.3;
+
+    margin-bottom:6px;
+
+}
+
+.card p{
+
+    font-size:13px;
+
+    color:#606060;
+
+    margin-bottom:4px;
+
+}
+
+/* ==========================
+   SCROLL
+========================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#bcbcbc;
+
+    border-radius:30px;
+
+}
