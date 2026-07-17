@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#f4f4f4;
+}
+
+.container{
+    display:grid;
+
+    /* 4 colunas iguais */
+    grid-template-columns:repeat(4, 150px);
+
+    /* cria as linhas automaticamente */
+    grid-auto-rows:150px;
+
+    gap:10px;
+    column-gap: 20px;
+}
+
+.item{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    font-weight:bold;
+    font-size:20px;
+}
+
+/* Cores */
+
+.item-01{background:aqua;}
+.item-02{background:blue;}
+.item-03{background:deeppink;}
+.item-04{background:blueviolet;}
+.item-05{background:limegreen;}
+.item-06{background:mediumvioletred;}
+.item-07{background:darkorange;}
+.item-08{background:dodgerblue;}
+.item-09{background:lightcoral;}
+.item-10{background:mediumpurple;}
