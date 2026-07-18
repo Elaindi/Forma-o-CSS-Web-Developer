@@ -1,0 +1,56 @@
+body {
+   display: grid;
+   border: 3px solid; 
+   height: 80vh;
+   grid-template:repeat(3, 1fr) / repeat(3, 1fr) ;
+   gap: 15px;
+   /*justify-items: stretch;*/
+   /*justify-items: start;*/
+   /*justify-items: end;*/
+   /*justify-items: center;*/
+   /*align-items: start;*/
+   /*align-items: end;*/
+   /* align-items: center;*/
+   place-items: start center;
+
+}
+
+.item-01 {
+    background-color: antiquewhite;
+}
+
+.item-02 {
+    background-color: rgb(196, 230, 173);
+}
+
+.item-03 {
+    background-color: rgb(238, 167, 75);
+}
+
+.item-04 {
+    background-color: rgb(236, 195, 80);
+}
+
+.item-05 {
+    background-color: rgb(236, 177, 219);
+}
+
+.item-06 {
+    background-color: rgb(147, 37, 238);
+}
+
+.item-07 {
+    background-color: rgb(21, 209, 223);
+}
+
+.item-08 {
+    background-color: rgb(169, 238, 9);
+}
+
+.item-09 {
+    background-color: rgb(52, 136, 151);
+}
+
+.item-10 {
+    background-color: rgb(145, 86, 10);
+}
