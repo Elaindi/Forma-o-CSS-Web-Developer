@@ -1,0 +1,53 @@
+/* ===========================
+   SIDEBAR FECHADA
+=========================== */
+
+.sidebar.close{
+
+    width:80px;
+
+}
+
+.sidebar.close span{
+
+    display:none;
+
+}
+
+.sidebar.close li{
+
+    justify-content:center;
+
+}
+
+.sidebar.close li i{
+
+    margin:0;
+
+}
+
+/* SIDEBAR FECHADA */
+
+.sidebar.close{
+
+    width:80px;
+
+}
+
+.sidebar.close span{
+
+    display:none;
+
+}
+
+.sidebar.close li{
+
+    justify-content:center;
+
+}
+
+.sidebar.close li i{
+
+    margin:0;
+
+}
