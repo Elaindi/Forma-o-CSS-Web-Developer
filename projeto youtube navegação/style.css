@@ -1,26 +1,30 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#fff;
-}
-
-.container{
-    display:flex;
-}
-
-.content{
-
-    width:100%;
-
-    margin-top:60px;
-
-    margin-left:240px;
-
-    padding:25px;
-
-}
+:root { --sidebar-width: 125px; --header-height: 31px; }
+* { box-sizing: border-box; }
+body { margin: 0; color: #0f0f0f; background: #fff; font-family: Roboto, Arial, sans-serif; font-size: 10px; }
+.topbar { height: var(--header-height); position: fixed; inset: 0 0 auto; z-index: 3; background: #fff; display: flex; align-items: center; justify-content: space-between; padding: 0 14px; }
+.brand, .actions { display: flex; align-items: center; gap: 15px; }
+button { font: inherit; cursor: pointer; }
+.icon-button { border: 0; padding: 0; background: transparent; color: #555; font-size: 14px; line-height: 1; }
+.youtube-logo { color: #111; font-family: Arial, sans-serif; font-size: 11px; letter-spacing: -1px; white-space: nowrap; }
+.youtube-logo i { color: #f00; font-size: 17px; vertical-align: -1px; }
+.search { width: 232px; height: 23px; display: flex; }
+.search input { min-width: 0; flex: 1; border: 1px solid #ddd; padding: 0 7px; outline: 0; }
+.search button { width: 32px; border: 1px solid #ddd; border-left: 0; background: #fafafa; color: #555; }
+.profile { width: 19px; height: 19px; display: grid; place-items: center; border-radius: 50%; background: linear-gradient(135deg,#b79b91,#382a2c); color: #fff; font-size: 8px; }
+.sidebar { position: fixed; top: var(--header-height); bottom: 0; left: 0; width: var(--sidebar-width); padding: 8px 7px; background: #fff; z-index: 2; }
+.sidebar a { height: 26px; display: flex; gap: 12px; align-items: center; padding: 0 8px; color: #222; text-decoration: none; white-space: nowrap; font-size: 9px; }
+.sidebar a i { width: 11px; color: #555; font-size: 13px; text-align: center; }
+.sidebar a.selected span { font-weight: 700; }
+main { margin: var(--header-height) 0 0 var(--sidebar-width); padding: 23px 24px 30px; min-height: calc(100vh - var(--header-height)); }
+.videos { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: 26px; row-gap: 31px; max-width: 1100px; }
+.thumbnail { aspect-ratio: 16 / 9; padding: 11px 9px; position: relative; overflow: hidden; color: #fff; font-size: 9px; line-height: 1.05; }
+.thumbnail b { display: block; margin-top: 7px; font-size: 11px; line-height: .95; }.thumbnail em { position: absolute; right: 10px; bottom: 4px; font-size: 29px; font-style: normal; }
+.python .thumbnail { background: radial-gradient(circle at 78% 30%,#487f6a 0 2%,transparent 3%), linear-gradient(118deg,#06160e 0 55%,#113326 55%); }.python .thumbnail b { font-size: 12px; color: #d8dbc2; }
+.scrum .thumbnail { background: linear-gradient(105deg,#075ea1 0,#386fc9 55%,#8e6ed9); }.scrum .thumbnail span { font-size: 13px; font-weight: 700; }.scrum .thumbnail b { color:#f5d16b; font-size:7px; }
+.machine .thumbnail { background: linear-gradient(120deg,#161616 0 65%,#333 65%); }.machine .thumbnail span { font-size: 10px; }.machine .thumbnail b { color:#d77735; letter-spacing:2px; }
+.project .thumbnail { background: linear-gradient(120deg,rgba(2,23,27,.74),rgba(0,0,0,.1)), linear-gradient(130deg,#466b59,#0a3039 60%,#b9a885); }.project .thumbnail b { font-size:14px; color:#f6e65c; letter-spacing:.5px; }
+.learn .thumbnail { background: linear-gradient(120deg,#162538,#0a101c 54%,#42464d); }.learn .thumbnail span { font-size:11px; font-weight:700; }.learn .thumbnail b { font-size:12px; }
+.video-info { display: grid; grid-template-columns: 25px 1fr; gap: 5px; padding-top: 8px; }.channel { width: 24px; height: 24px; display: grid; place-items:center; border-radius:50%; background:#05050b; color:#4e99d7; font-size:6px; font-weight:700; }.video-info h2 { margin: 0 0 4px; font-size: 9px; line-height: 1.1; font-weight: 700; }.video-info p { margin: 0; color: #606060; font-size: 8px; line-height: 1.1; }
+.sidebar.close { width: 48px; }.sidebar.close span { display: none; }.sidebar.close a { justify-content:center; padding:0; }.sidebar.close + main { margin-left:48px; }
+@media (max-width: 700px) { :root { --sidebar-width: 50px; }.sidebar span { display:none; }.sidebar a { justify-content:center; padding:0; }.videos { grid-template-columns: repeat(2,minmax(0,1fr)); gap:20px 12px; }.search { width:38%; } main { padding: 17px 12px; } }
+@media (max-width: 420px) { .videos { grid-template-columns:1fr; }.actions .icon-button { display:none; }.search { width:50%; } }
