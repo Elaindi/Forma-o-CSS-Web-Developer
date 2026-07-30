@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens responsivas</title>
+    <style>
+        .image-container {
+            border: 2px solid red;
+            height: 500px;
+            width: 100%;
+            background-image: url('/mulher.jpg');
+        }
+
+        @media screen and (max-width: 690px){
+            .image-container {
+               background-image: url(/alexander-kaufmann-jjJEr_-N3OA-unsplash.jpg); 
+            }
+        }
+      
+    </style>
+</head>
+<body>
+    <p><b>Entendendo o exemplo</b></p>
+
+    <div class="image-container">
+        
+    </div>
+
+    <!--<picture>
+        <source srcset="/alexander-kaufmann-jjJEr_-N3OA-unsplash.jpg" media="(max-width: 680px)">
+        <source srcset="/salão.jpg">
+        <img src="/salão.jpg" alt="teste">
+    </picture>-->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptate labore facere reprehenderit. Soluta unde aperiam distinctio velit delectus quae odio asperiores natus? Modi dignissimos, dolorum illum sapiente dolor vel.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptate labore facere reprehenderit. Soluta unde aperiam distinctio velit delectus quae odio asperiores natus? Modi dignissimos, dolorum illum sapiente dolor vel.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptate labore facere reprehenderit. Soluta unde aperiam distinctio velit delectus quae odio asperiores natus? Modi dignissimos, dolorum illum sapiente dolor vel.
+    </p>
+</body>
+</html>
