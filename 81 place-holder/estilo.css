@@ -1,0 +1,11 @@
+code {
+    background-color:rgb(179, 179, 179);
+}
+
+input::placeholder {
+    color: lightcoral;
+}
+
+input {
+    color: red
+}

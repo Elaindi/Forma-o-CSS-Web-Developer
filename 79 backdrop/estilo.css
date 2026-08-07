@@ -1,0 +1,11 @@
+code {
+    background-color: #b3b3b3;
+}
+
+video {
+    width: 100%
+}
+
+video ::backdrop {
+    background: blue;
+}
