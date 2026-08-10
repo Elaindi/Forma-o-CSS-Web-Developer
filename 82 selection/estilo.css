@@ -1,0 +1,15 @@
+code {
+    background-color: rgb(179, 179, 179);
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+::selection {
+    background-color: rgb(240, 86, 171);
+    color: white;
+}
+
+.exemplo::selection {
+    background-color: rgb(5, 232, 248);
+    color: blue;
+}

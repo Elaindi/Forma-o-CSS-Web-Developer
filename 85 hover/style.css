@@ -1,0 +1,33 @@
+button {
+    background-color: palevioletred;
+    border: none;
+    padding: 8px 14px;
+    color:aliceblue
+
+}
+
+button:hover {
+    background-color: #55a3a3;
+    cursor: pointer;
+    border: 2px solid #a35579;
+}
+
+.container {
+    
+    width: 100px;
+    height: 100px;
+    background-color: #99d116;
+    margin-top: 20px;
+}
+
+.container:hover {
+    background: url('/Captura\ de\ tela\ 2026-07-22\ 113906.png') no-repeat repeat ;
+    background-size: cover;
+
+}
+
+.container button:hover {
+    background-color:aqua;
+    color: black;
+    
+}

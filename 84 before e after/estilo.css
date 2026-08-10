@@ -1,0 +1,20 @@
+.card-image {
+    width: 300px;
+    height: 300px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background: url('/uschi2807-british-shorthair-9717302.jpg')no-repeat ;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.card-image::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgba(255,0,140,0.8));
+
+}
