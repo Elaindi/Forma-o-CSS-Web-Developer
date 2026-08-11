@@ -1,0 +1,30 @@
+button {
+    background-color: palevioletred;
+    border: none;
+    padding: 8px 14px;
+    color:aliceblue
+
+}
+
+button:hover {
+    background-color: #55a3a3;
+    cursor: pointer;
+    border: 2px solid #a35579;
+}
+
+button:active {
+    background-color: #a35579;
+
+    border: 2px solid #55a3a3;
+}
+
+a:active {
+    background-color: palevioletred;
+    color: black;
+}
+
+h1:active {
+    background-color:greenyellow;
+}
+
+
