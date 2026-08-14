@@ -1,0 +1,18 @@
+/* Link que ainda não foi visitado */
+.exemplo:link {
+    color: limegreen;
+}
+
+/* Link depois que foi visitado */
+.exemplo:visited {
+    color: purple;
+}
+
+/* Segundo link */
+a:not(.exemplo):link {
+    color: blue;
+}
+
+a:not(.exemplo):visited {
+    color: red;
+}
