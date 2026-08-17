@@ -1,0 +1,11 @@
+article p:nth-child(2) {
+    color: red;
+}
+
+li:nth-child(even) {
+    color: red;
+}
+
+li:nth-child(odd) {
+    background-color: chartreuse;
+}

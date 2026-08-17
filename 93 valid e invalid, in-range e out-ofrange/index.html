@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Pseudo-classes</title>
+</head>
+<body>
+    <div>
+            <input name="task-01" type="checkbox">
+            <label for="task-01">invalid</label>
+        </div>
+
+        <div>
+            <input name="task-01=2" type="checkbox">
+            <label for="task-02">valid</label>
+        </div>
+
+        <div>
+            <input name="task-03" type="checkbox">
+            <label for="task-03">in-reange</label>
+        </div>
+
+        <div>
+            <input name="task-04" type="checkbox">
+            <label for="task-04">out-of-reange</label>
+        </div>
+        <hr>
+    <form action="">
+        <h3>Faça suas compra</h3>
+
+        <label for="email" required="">E-mail</label>
+        <input type="email" name="email">
+        <label for="codigo-produto">código produto</label>
+        <input type="number" name="codigo-produto" min="1000">
+
+        <label for="cupom">cupom de desconto</label>
+        <input type="text" type="cupom" pattern="[a-z]+" placeholder="Apenas letras minúsculas">
+
+        <label for="data-nascimento">Data de nascimento</label>
+        <input type="date" name="data-nascimento" min="1962-01-01" max="2004-12-31">
+
+        <label for="quantidade">Quantidade
+        <input type="number" name="amount" min="3" max="10">
+
+        <input type="checkbox" required>
+        <span>Li e aceito os termos de uso</span>
+        </label>
+
+        <button type="submit">Comprar</button>
+
+        
+
+    </form>
+</body>
+</html>
