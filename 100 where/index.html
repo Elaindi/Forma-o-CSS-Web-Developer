@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pseudo-classes</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Quando o checkbox estiver marcado */
+        input[type="checkbox"]:checked + label {
+            text-decoration: line-through;
+        }
+
+        /* Título do post */
+        .post h2 {
+            color: red;
+        }
+
+        /* Itens da lista */
+        .post li {
+            color: red;
+        }
+
+        /* Parágrafos com a classe red */
+        .post .red {
+            color: red;
+        }
+
+        section p,
+        article p,
+        aside p,
+        nav p {
+          background-color: rgb(43, 226, 125); 
+          font-weight: bold; 
+        }
+
+        :where(section, article, aside, nav) p {
+            background-color: blueviolet; 
+          font-weight: bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Pseudo-classes</h1>
+
+    <input id="task" name="task" type="checkbox">
+
+    <label for="task">Is</label>
+
+
+    <article class="post">
+
+        <h2>Meu post</h2>
+
+        <p>Sumário:</p>
+
+        <ul>
+            <li>Capitulo 01</li>
+            <li>Capitulo 02</li>
+            <li>Capitulo 03</li>
+            <li>Capitulo 04</li>
+        </ul>
+
+
+        <p class="red">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Assumenda, cupiditate ad magni molestias in nesciunt optio
+            nemo quasi commodi ipsa id temporibus aliquid iure minima
+            quo maxime, nisi quae. Suscipit!
+        </p>
+
+
+        <p class="red">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Assumenda, cupiditate ad magni molestias in nesciunt optio
+            nemo quasi commodi ipsa id temporibus aliquid iure minima
+            quo maxime, nisi quae. Suscipit!
+        </p>
+
+
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Tempore maxime, dolor consequatur dolores excepturi velit
+            vero corporis quia placeat harum odit, ducimus deserunt
+            facere eum expedita impedit natus. Dolore, eligendi.
+        </p>
+
+    </article>
+
+
+    <hr>
+
+
+    <section>
+        <p>Exemplo 1</p>
+    </section>
+
+
+    <article>
+        <p>Exemplo 2</p>
+    </article>
+
+
+    <aside>
+        <p>Exemplo 3</p>
+    </aside>>
+
+
+    <nav>
+        <p>Exemplo 4</p>
+    </nav>
+
+</body>
+
+</html>

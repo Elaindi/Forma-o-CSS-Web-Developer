@@ -1,0 +1,23 @@
+body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Quando o checkbox estiver marcado */
+        input[type="checkbox"]:checked + label {
+            text-decoration: line-through;
+        }
+
+        /* Título do post */
+        .post h2 {
+            color: red;
+        }
+
+        /* Itens da lista */
+        .post li {
+            color: red;
+        }
+
+        /* Parágrafos com a classe red */
+        .post .red {
+            color: red;
+        }
