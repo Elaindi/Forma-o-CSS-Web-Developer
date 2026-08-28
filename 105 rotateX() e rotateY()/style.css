@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247,247,247);
+
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background: url(/pexels-amaurymic-33953580.jpg);
+    
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.box:hover {
+    transform: rotatex(20deg);
+}
