@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247,247,247);
+
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 300px;
+    perspective-origin: top;
+    transform-style: preserve-3d;
+    
+}
+
+.box {
+ 
+    
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    transition: 2s;
+    transform-origin: bottom left;
+    position: absolute;
+}
+
+.box:nth-child(1) {
+    background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+    transform: rotatey(40deg);
+}
+
+.box:nth-child(2) {
+    background: linear-gradient(90deg, #fc466b 0%, #2eb10d 100%);
+    transform: rotatey(-40deg);
+}
+
+
+.box:hover {
+    transform: rotate(400deg);
+}
+
+
+
