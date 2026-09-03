@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247,247,247);
+
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 300px;
+    
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    background: #d53369;
+    animation-name: exemplo;
+    /*animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: 4s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: both;*/
+    animation:change-background 5s linear 2s infinite alternate;
+      
+}
+
+.box:hover {
+    animation-play-state: paused;
+}
+
+@keyframes exemplo {
+    0% {
+        background: palegreen;
+        
+
+    }
+    50% {
+        background: darkblue;
+       
+    }
+    100% {
+        background: purple;
+        
+    }
+}
+
