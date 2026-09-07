@@ -1,0 +1,46 @@
+:root {
+    --bg-gradiente:linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+    --bg-body:rgb(34,34,34);
+    --box-shadow-default: 10px 10px 10px lightgray;
+    --text-color: red;
+}
+
+.light-theme {
+    --bg-body:rgb(230, 230, 230);
+    --bg-gradiente:linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+    
+}
+
+.dark-theme {
+    --bg-body:rgb(34,34,34);
+    --bg-gradiente:linear-gradient(90deg, #fc466b 0%, #daae51 100%);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-body);
+    text-align: center;
+}
+
+h1{
+    background: var(--bg-gradiente);
+    font-size: 5em;
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+a {
+    text-decoration: none;
+    background: var(--bg-gradiente);
+    padding: 8px 14px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: var(--box-shadow-default);
+
+}
+
+p {
+  color: var(--text-color);  
+}
