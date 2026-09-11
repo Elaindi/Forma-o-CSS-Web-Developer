@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/imagens/style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-light ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img width="50" height="50" src="/imagens/logo2.png" alt="logotipo cafeteria"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">Sobre nós</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#menu">Cardápio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#local">Local</a>
+        </li>
+       
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+        <button class="btn btn-primary" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!--carrossel-->
+    <div id="carousel-coffee" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carousel-coffee" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carousel-coffee" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carousel-coffee" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?q=80&w=1061&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="grãos de café">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Amelhor experiencia gastronômica de café</h5>
+        <p>Você vai experenciar os melhores cafés do Brasil e do mundo.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="frente da cafeteria">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Um ambiente pensado pra você e sua fa mília</h5>
+        <p>Nosso restaurante foi pensado pra te fornecer um ambiente confortável, tranquilo e leve.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="preparação do cafe">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Os melhores grãos</h5>
+        <p>Trabalhamos com igredientes selecionados da melhor qualidade, do jeito que você merece.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-coffee" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carousel-coffee" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!--quote-->
+<figure>
+  <blockquote class="blockquote">
+    <h3 class="fw-lighter text-center fst-italic mt-5">"o amor é um café as oito da manhã numa segunda-feira."</h3>
+  </blockquote>
+  <figcaption class="blockquote-footer text-center">
+    <cite title="Source Title">coffee shop</cite>
+  </figcaption>
+</figure>
+
+<!--about cards-->
+<section id="about" class="container mt-5 ">
+  <div class="row">
+    <div class="col-lg-6 col-md-12">
+      <div class="card mb-3">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="https://images.unsplash.com/photo-1502462041640-b3d7e50d0662?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid rounded-start" alt="cafe com coração">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Somos apaixonados por café</h5>
+        <h6 class="card-subtitle text-muted mb-2 text-body-secondary">Nossa paixão</h6>
+        <p class="card-text">Cada xícara é preparada com carinho para despertar os sentidos e transformar momentos simples em experiências especiais. Do primeiro aroma ao último gole, queremos que você sinta o cuidado e o sabor de um café feito para quem realmente ama café.
+
+Porque quem.</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-6 col-md-12">
+       <div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="https://images.unsplash.com/photo-1620807773206-49c1f2957417?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid rounded-start" alt="maquina de cafe">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Equipe premium de baristas</h5>
+        <h6 class="card-subtitle text-muted mb-2 text-body-secondary">Selecionamos profissionais que entendem de café, dominam diferentes métodos de preparo e cuidam de cada detalhe — desde a escolha dos grãos até a apresentação final,Qualidade, precisão e paixão em cada xícara.
+Venha conhecer o sabor de um café preparado por quem realmente entende do assunto .
+
+Porque quem.</p>
+        
+      </div>
+    </div>
+    </div>
+    
+  </div>
+</section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
