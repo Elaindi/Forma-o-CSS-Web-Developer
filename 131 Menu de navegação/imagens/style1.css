@@ -1,0 +1,14 @@
+
+
+.navbar-brand {
+    width: 50px;
+}
+
+.btn.btn-primary {
+    background-color: #198754;
+    border-color: #198754;
+    color: #ffffff;
+    --bs-btn-bg: #198754;
+    --bs-btn-border-color: #198754;
+    --bs-btn-active-bg: #198754;
+}
