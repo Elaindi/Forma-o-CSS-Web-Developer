@@ -1,0 +1,71 @@
+:root {
+    --bs-link-color: #198754;
+    --bs-link-hover-color: #146c43;
+}
+
+.navbar-brand {
+    width: 50px;
+}
+
+.btn.btn-primary {
+    background-color: #198754;
+    border-color: #198754;
+    color: #ffffff;
+    --bs-btn-bg: #198754;
+    --bs-btn-border-color: #198754;
+    --bs-btn-active-bg: #198754;
+    --bs-link-color: #198754;
+    --bs-link-hover-color: #146c43;
+}
+
+main {
+    margin-top: 5rem;
+}
+
+section{
+    scroll-margin-top: 6rem ;
+}
+
+/* tamanho do carrossel */
+.carousel-item {
+    height: 500px; 
+}
+
+.carousel-item img {
+    object-fit: cover; 
+    height: 100%; 
+    object-position: center;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgb(31,31,31));
+   
+}
+
+.card-menu img {
+    height: 220px;
+    object-fit: cover;
+
+}
+
+/* Abas do cardápio */
+.nav-tabs .nav-link {
+    color: #198754 !important;
+    border-color: #198754 !important;
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
+    color: #146c43 !important;
+    background-color: #d1e7dd !important;
+}
+
+.nav-tabs .nav-link.active {
+    color: #ffffff !important;
+    background-color: #198754 !important;
+    border-color: #198754 !important;
+}

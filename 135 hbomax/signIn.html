@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signIn.css" />
+    <title>Entrar | Max</title>
+  </head>
+  <body>
+    <nav class="menu">
+      <a href="index.html" class="menu__logo">
+        <img src="assets/imagens/hbo-logo.svg" alt="Logotipo Max" class="menu__logo-image" />
+      </a>
+    </nav>
+    <main class="content">
+      <form class="login" action="index.html" method="get">
+        <h1 class="login__title">Entrar</h1>
+        <label class="login__label" for="email">E-mail</label>
+        <input class="login__field" id="email" name="email" type="email" placeholder="Digite seu e-mail" required />
+        <label class="login__label" for="password">Senha</label>
+        <input class="login__field" id="password" name="password" type="password" placeholder="Digite sua senha" required minlength="6" />
+        <div class="login__actions">
+          <button class="button button--gradient" type="submit">Entrar</button>
+          <a class="login__link" href="index.html#subscription">Assine agora</a>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
